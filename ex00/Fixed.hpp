@@ -14,7 +14,7 @@ public:
   void setRawBits(const int raw);
 
 private:
-  static const int kPointPosition = 8;
+  static const int kFractionalBits = 8;
 
   int value_;
 };
