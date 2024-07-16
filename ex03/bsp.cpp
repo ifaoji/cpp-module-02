@@ -18,6 +18,5 @@ bool bsp(const Point a, const Point b, const Point c, const Point point) {
                   denominator;
   double cross3 = 1 - cross1 - cross2;
 
-  return (cross1 >= 0 && cross2 >= 0 && cross3 >= 0) ||
-         (cross1 <= 0 && cross2 <= 0 && cross3 <= 0);
+  return (cross1 > 0 && cross2 > 0 && cross3 > 0);
 }
